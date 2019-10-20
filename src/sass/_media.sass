@@ -56,7 +56,7 @@
         &__subheader
             font-size: 10px
     .benefits
-        &__header
+        .title
             font-size: 20px
         &__items
             flex-direction: column
@@ -65,6 +65,57 @@
                 min-height: 166px
                 margin-top: 30px
                 .item__header
+                    margin-top: 10px
+                .item__text
+                    margin-top: 5px
+@media (max-width: 575px)
+    .header
+        &__logo
+            width: 110px
+        &__official
+            font-size: 9px
+            span 
+                font-size: 10px
+        &__phone
+            font-size: 11px
+        .button
+            width: 100px
+            height: 20px
+            font-size: 9px    
+    .promo
+        min-height: 450px
+        padding-bottom: 25px
+        &__wrapper
+            margin-top: 28px
+        &__header
+            font-size: 15px
+        &__subheader
+            font-size: 10px
+        &__icons
+            width: 225px
+        &__icon
+            font-size: 9px
+            img 
+                width: 25px
+                height: 25px
+        .button_main
+            width: 150px
+            height: 30px
+            font-size: 10px
+        &__link
+            font-size: 11px
+    .benefits
+        padding: 33px 0 38px 0
+        .title
+            font-size: 13px
+        &__items
+            flex-direction: column
+            margin-top: 0
+            .benefits__item
+                min-height: 166px
+                margin-top: 30px
+                .item__header
+                    font-size: 14px
                     margin-top: 10px
                 .item__text
                     margin-top: 5px
