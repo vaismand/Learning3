@@ -15,6 +15,10 @@
             height: 45px
     .title_left
         font-size: 28px
+    .carousel
+        &__wrapper
+            img 
+                width: 90%
 @media (max-width: 991px)
     .promo
         &__wrapper
@@ -42,6 +46,11 @@
     .consultation
         padding-left: 25px
         padding-right: 25px
+    .carousel
+        &__wrapper
+            img 
+                width: 80%
+                margin: 0 auto
 @media (max-width: 767px)
     .header
         &__logo
@@ -84,6 +93,19 @@
         &__descr
             font-size: 14px
             margin-top: 20px
+    .carousel
+        &__wrapper
+            img 
+                width: 300px
+                height: 250px
+                margin: 0
+    .catalog
+        &__tab
+            width: 180px
+        &__content
+            justify-content: space-around
+    .responses
+        padding: 0 30px
 @media (max-width: 575px)
     .header
         &__logo
@@ -153,6 +175,30 @@
         width: 200px
         height: 40px
         font-size: 12px
+    .catalog
+        .title
+            font-size: 15px
+        &__tab
+            width: 80px
+            height: 30px
+            font-size: 8px
+            line-height: 28px
+    .responses
+        .title
+            font-size: 20px
+        img 
+            width: 100px
+            height: 100px
+            margin: 0 auto
+            margin-bottom: 20px
+        &-items
+            flex-direction: column
+        &-item
+            text-align: center
+            margin: 0 auto
+            &__text
+                font-size: 13px
+
 
 
         
