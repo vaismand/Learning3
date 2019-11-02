@@ -14,6 +14,7 @@ $(document).ready(function(){
             }
         ]
     });
+
     $('ul.catalog__tabs').on('click', 'li:not(catalog__tab_active)', function() {
         $(this)
           .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -73,7 +74,7 @@ $(document).ready(function(){
                 }
             }
         });
-    };
+    }
 
     validateForms('#consult-form');
     validateForms('#consult form');
@@ -94,6 +95,22 @@ $(document).ready(function(){
 
             $('form').trigger('reset');
         });
+        return false;
+    });
+
+    //smooth
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
 
