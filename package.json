@@ -22,12 +22,17 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
+    "gulp-imagemin": "^6.1.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2"
   },
-"browserslist":[
-  "last 2 versions",
-  "> 1%",
-  "maintained node versions",
-  "not dead"
-]}
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
