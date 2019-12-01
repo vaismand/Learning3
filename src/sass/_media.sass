@@ -17,8 +17,6 @@
         font-size: 28px
     .carousel
         &__wrapper
-            img 
-                width: 90%
 @media (max-width: 991px)
     .promo
         &__wrapper
@@ -47,10 +45,15 @@
         padding-left: 25px
         padding-right: 25px
     .carousel
-        &__wrapper
+        .slick-slide
             img 
-                width: 80%
+                width: 60%
                 margin: 0 auto
+    .pageup
+        bottom: 30px
+        right: 30px
+        img 
+            width: 60%
 @media (max-width: 767px)
     .header
         &__logo
@@ -95,12 +98,6 @@
             margin-top: 20px
     .carousel
         &__wrapper
-            img 
-                width: 300px
-                height: 250px
-                margin: 0 auto
-        .slick-active
-            max-width: 300px
     .catalog
         &__tab
             width: 180px
@@ -108,6 +105,9 @@
             justify-content: space-around
     .responses
         padding: 0 30px
+    .pageup
+        bottom: 10px
+        right: 10px
 @media (max-width: 575px)
     .header
         &__logo
@@ -220,6 +220,20 @@
             right: 5px
             top: 5px
             font-size: 30px
+    .footer
+        &__info
+            width: 280px
+            padding: 15px
+            height: 150px
+        &__addr
+            font-size: 14px
+        &__phone
+            font-size: 13px
+            margin-bottom: 10px
+        &__social-item
+            width: 35px
+            height: 35px
+
             
 
 
