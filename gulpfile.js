@@ -41,7 +41,7 @@ gulp.task('html', function() {
 
 gulp.task('scripts', function() {
     return gulp.src("src/js/**/*.js")
-    .pipe(gulp.dest("dist/"));
+    .pipe(gulp.dest("dist/js"));
 });
 
 gulp.task('fonts', function() {
@@ -50,7 +50,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('icons', function() {
-    return gulp.src("src/js/**/*")
+    return gulp.src("src/icons/**/*")
     .pipe(gulp.dest("dist/icons"));
 });
 
